@@ -48,12 +48,14 @@ const CartScreen = () => {
               <ListGroup.Item key={item._id}>
                 <Row>
                   <Col md={2}>
-                    <Image 
+                    <img 
                       src={item.image} 
                       alt={item.name} 
+                      width="300"
+                      height="300"
+                      style={{ width: '100%', height: 'auto' }}
                       fluid 
                       rounded 
-                      loading="lazy"
                     />
                   </Col>
                   <Col md={3}>

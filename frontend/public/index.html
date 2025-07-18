@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="32x32" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -21,6 +21,9 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://proshop-pw5w.onrender.com/" />
+
+    <!-- Preload LCP image (change path if needed) -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/images/playstation.webp" />
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="ProShop | Best Online Shopping Deals" />
@@ -41,11 +44,24 @@
     />
     <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
 
-    <!-- Accessibility Meta -->
+    <!-- Robots -->
     <meta name="robots" content="index, follow" />
+
+    <!-- Add structured data for better indexing (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "ProShop",
+        "url": "https://proshop-pw5w.onrender.com/",
+        "logo": "%PUBLIC_URL%/logo192.png",
+        "description": "Best online deals for electronics and gadgets.",
+        "sameAs": []
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" role="main"></div>
   </body>
 </html>

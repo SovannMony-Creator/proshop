@@ -81,11 +81,13 @@ const ProductScreen = () => {
           <Meta title={product.name} description={product.description} />
           <Row>
             <Col md={6}>
-              <Image
+              <img
                 src={product.image}
                 alt={product.image}
+                width="300"
+                height="300"
+                style={{ width: '100%', height: 'auto' }}
                 fluid
-                loading="lazy"
               />
             </Col>
             <Col md={3}>
