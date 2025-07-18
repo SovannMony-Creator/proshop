@@ -163,6 +163,7 @@ const OrderScreen = () => {
                             alt={item.name}
                             fluid
                             rounded
+                            loading="lazy"
                           />
                         </Col>
                         <Col>
