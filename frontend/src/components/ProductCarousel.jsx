@@ -16,7 +16,9 @@ const ProductCarousel = () => {
             <img 
               src={product.image} 
               alt={product.name}
-              style={{ width: '50%', height: 'auto' }}
+              width="600"
+              height="400"
+              style={{ width: '100%', height: 'auto' }}
               fluid
             />
             <Carousel.Caption className='carousel-caption'>
