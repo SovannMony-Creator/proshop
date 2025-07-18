@@ -16,8 +16,7 @@ const ProductCarousel = () => {
             <img 
               src={product.image} 
               alt={product.name}
-              width="600"
-              height="400"
+              width="400"
               style={{ width: '100%', height: 'auto' }}
               fluid
             />
