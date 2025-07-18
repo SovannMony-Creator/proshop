@@ -83,7 +83,7 @@ const ProductScreen = () => {
             <Col md={6}>
               <Image
                 src={product.image}
-                alt={'Product image of ${product.name}'}
+                alt={product.image}
                 fluid
                 loading="lazy"
               />
