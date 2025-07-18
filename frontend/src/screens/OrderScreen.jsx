@@ -161,8 +161,6 @@ const OrderScreen = () => {
                           <Image
                             src={item.image}
                             alt={item.name}
-                            width="300"
-                            height="300"
                             style={{ width: '100%', height: 'auto' }}
                             fluid
                             rounded

@@ -83,7 +83,7 @@ const ProductScreen = () => {
             <Col md={6}>
               <img
                 src={product.image}
-                alt={product.image}
+                alt={product.name}
                 style={{ width: '100%', height: 'auto' }}
                 fluid
               />
