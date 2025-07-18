@@ -50,9 +50,7 @@ const CartScreen = () => {
                   <Col md={2}>
                     <img 
                       src={item.image} 
-                      alt={item.name} 
-                      width="300"
-                      height="300"
+                      alt={item.name}
                       style={{ width: '100%', height: 'auto' }}
                       fluid 
                       rounded 
