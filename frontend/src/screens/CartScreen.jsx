@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   ListGroup,
-  Image,
   Form,
   Button,
   Card,

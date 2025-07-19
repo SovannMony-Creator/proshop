@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   Row,
   Col,
-  Image,
   ListGroup,
   Card,
   Button,
