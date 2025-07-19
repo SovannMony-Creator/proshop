@@ -34,6 +34,12 @@ if (process.env.NODE_ENV === 'production') {
   app.use('/uploads', express.static('/var/data/uploads'));
   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
+  // Serve service-worker.js explicitly to avoid fallback to index.html
+  app.get('/service-worker.js', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'service-worker.js'));
+  });
+
+  // All other requests fallback to index.html
   app.get('*', (req, res) =>
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
   );
